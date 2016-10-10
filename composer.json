@@ -1,0 +1,32 @@
+{
+    "name": "lukaszmakuch/rosmaro-sf",
+    "type": "library",
+    "description": "Allows to use Rosmaro with Symfony.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Łukasz Makuch",
+            "email": "kontakt@lukaszmakuch.pl",
+            "homepage": "http://lukaszmakuch.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "lukaszmakuch\\RosmaroSf\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "lukaszmakuch\\RosmaroSf\\": "test/"
+        }
+    },
+    "require": {
+        "symfony/http-foundation": "3.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.4.*"
+    },
+    "scripts" : {
+        "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php test"
+    }
+}
